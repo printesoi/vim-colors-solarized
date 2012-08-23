@@ -806,6 +806,11 @@ exe "hi! rubyDefine"     . s:fg_base1  .s:bg_back   .s:fmt_bold
 "hi! link rubyClassVariable     Identifier
 "hi! link rubyConstant          Type
 "}}}
+" c/c++ highlighting "{{{
+exe "hi! cType"             .s:fmt_none     .s:fg_yellow .s:fmt_bold
+exe "hi! cStructure"        .s:fmt_none     .s:fg_yellow    .s:fmt_bold
+hi! link cppStructure cStructure
+" }}}
 " haskell syntax highlighting"{{{
 " ---------------------------------------------------------------------
 " For use with syntax/haskell.vim : Haskell Syntax File
